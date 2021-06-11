@@ -1,0 +1,83 @@
+.tv3,
+.tv3 * {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+ 
+.tv3 label[for]::before,
+.tv3 label span::before  {
+    content: "\25b6";
+    display: inline-block;
+    margin: 2px 0 0;
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+    text-align: center;
+    color: #804020;
+    font-size: 12px;
+    line-height: 16px;
+}
+ 
+.tv3 li ul {
+    margin: 5px 5px 5px 28px;
+}
+ 
+.tv3 * {
+    vertical-align: middle;
+}
+
+.tv3 li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+ 
+.tv3 input[type="checkbox"] {
+    display: none;
+}
+ 
+.tv3 label {
+    cursor: pointer;
+}
+ 
+.tv3 label[for]::before {
+    -webkit-transform: translatex(-24px);
+    -moz-transform: translatex(-24px);
+    -ms-transform: translatex(-24px);
+    -o-transform: translatex(-24px);
+    transform: translatex(-24px);
+}
+ 
+.tv3 label span::before {
+    -webkit-transform: translatex(16px);
+    -moz-transform: translatex(16px);
+    -ms-transform: translatex(16px);
+    -o-transform: translatex(16px);
+    transform: translatex(16px);
+}
+ 
+.tv3 input[type="checkbox"][id]:checked ~ label[for]::before {
+    content: "\25bc";
+}
+ 
+.tv3 input[type="checkbox"][id]:not(:checked) ~ ul {
+    display: none;
+}
+ 
+.tv3 label:not([for]) {
+    margin: 5px 8px 0 0;
+}
+ 
+.tv3 label span::before {
+    content: "";
+    border: solid 1px #1375b3;
+    color: #1375b3;
+    opacity: .50;
+}
+ 
+.tv3 label input:checked + span::before {
+    content: "\2714";
+    box-shadow: 0 0 2px rgba(0, 0, 0, .25) inset;
+    opacity: 1;
+}
